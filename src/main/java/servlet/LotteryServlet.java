@@ -5,6 +5,7 @@ import java.util.LinkedHashSet;
 import java.util.Random;
 import java.util.Set;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -23,7 +24,11 @@ public class LotteryServlet extends HttpServlet{
 			numbers.add(number);
 			
 		}
-		resp.getWriter().print(numbers);
+		RequestDispatcher rd = req.getRequestDispatcher("/lottery.jsp");
+		rd.setAttribute("numbers" ,numbers );
+		rd.forward(req, resp);
+		
+		
 		
 	}
 	
