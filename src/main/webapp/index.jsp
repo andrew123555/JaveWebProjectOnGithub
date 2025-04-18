@@ -7,6 +7,18 @@
 <title>my JavaWeb</title>
 </head>
 <body>
-	我的JavaWeb首頁
+	<h1>我的JavaWeb首頁</h1>
+	<h2>Servlet應用</h2>
+	<ul>
+		<li>
+		<a href = "Http://localhost:8080/JavaWeb/hello" >HelloServlet</a>
+		</li>
+		
+		<li>
+		<a href = "/JavaWeb/lottery" >LotteryServlet</a>
+		</li>
+	</ul>
+	
+	
 </body>
 </html>

@@ -18,7 +18,7 @@ import jakarta.servlet.http.HttpServletResponse;
 //@WebServlet(urlPatterns = {"/hello" , "/welcom"})
 
 //方法四 網址可任意字元
-@WebServlet(urlPatterns = "/*")
+@WebServlet(urlPatterns = "/hello")
 
 public class HelloServlet extends HttpServlet {
 

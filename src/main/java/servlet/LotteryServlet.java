@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = "/Lottert")
+@WebServlet(urlPatterns = "/lottery")
 public class LotteryServlet extends HttpServlet{
 
 	@Override
@@ -25,7 +25,7 @@ public class LotteryServlet extends HttpServlet{
 			
 		}
 		RequestDispatcher rd = req.getRequestDispatcher("/lottery.jsp");
-		rd.setAttribute("numbers" ,numbers );
+		req.setAttribute("numbers" ,numbers );
 		rd.forward(req, resp);
 		
 		
